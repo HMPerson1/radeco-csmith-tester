@@ -1,0 +1,17 @@
+[package]
+name = "radeco-csmith-tester"
+version = "0.0.1"
+authors = ["HMPerson1 <hmperson1@gmail.com>"]
+description = "Test `radeco-lib` with a randomly generated program from Csmith."
+repository = "https://github.com/HMPerson1/radeco-csmith-tester"
+readme = "README.md"
+
+[dependencies]
+failure = "0.1.0"
+quicli = { git = "https://github.com/killercup/quicli" } # waiting on pr #77 to be released
+rand = "0.4.0"
+
+[dependencies.radeco-lib]
+git = "https://github.com/radare/radeco-lib"
+# path = "../radeco-lib"
+features = ["trace_log"]
